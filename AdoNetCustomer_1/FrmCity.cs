@@ -1,19 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AdoNetCustomer_1
 {
-    public partial class Form1 : Form
+    public partial class FrmCity : Form
     {
-        public Form1()
+        public FrmCity()
         {
             InitializeComponent();
         }
@@ -26,7 +20,7 @@ namespace AdoNetCustomer_1
             SqlDataAdapter adapter = new SqlDataAdapter(sql); //SqlDataAdapter hafızaya verdiğimiz sorgudan gelen dataları tutup onları ekrana yansıtmamızı sağlayan köprü görevinde 
             DataTable dataTable = new DataTable(); // sanal tablo nesnesi oluşturuyoruz
             adapter.Fill(dataTable); //hafızaya almış olduğumuz sorgu var.bu sorgudan gelen verileri datagrid viewde göstermeden önce datatable sanal tablonun içerisine doldur demiş oluyorum.
-            dataGridView1.DataSource = dataTable; 
+            dataGridView1.DataSource = dataTable;
             connect.Close();
 
             /*
@@ -70,6 +64,34 @@ namespace AdoNetCustomer_1
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            connect.Open();
+            SqlCommand command = new SqlCommand("update City set CityName= @cityname,CityCountry = @country where CityId = @id", connect);
+            command.Parameters.AddWithValue("@cityname", txtCityName.Text);
+            command.Parameters.AddWithValue("@country", txtCityCountry.Text);
+            command.Parameters.AddWithValue("@id", txtCityId.Text);
+            command.ExecuteNonQuery();
+            connect.Close();
+
+            MessageBox.Show("Transaction Successful");
+            txtCityId.Text = "";
+            txtCityName.Text = "";
+            txtCityCountry.Text = "";
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            connect.Open();
+            SqlCommand sql = new SqlCommand("select *from City where CityName = @cityname", connect);
+            sql.Parameters.AddWithValue("@cityname", txtCityName.Text);
+            sql.ExecuteNonQuery();
+            SqlDataAdapter adapter = new SqlDataAdapter(sql);
+            DataTable dataTable = new DataTable(); // sanal tablo nesnesi oluşturuyoruz
+            adapter.Fill(dataTable); // hafızaya almış olduğumuz sorgu var.bu sorgudan gelen verileri datagrid viewde göstermeden önce datatable sanal tablonun içerisine doldur demiş oluyorum.
+            dataGridView1.DataSource = dataTable;
+            connect.Close();
+
+            txtCityName.Text = "";
 
         }
     }
