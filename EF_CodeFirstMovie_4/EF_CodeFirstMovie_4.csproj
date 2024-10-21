@@ -56,11 +56,23 @@
     <Compile Include="DAL\Context\MovieContext.cs" />
     <Compile Include="DAL\Entities\Category.cs" />
     <Compile Include="DAL\Entities\Movie.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmCategory.Designer.cs">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnasayfa.Designer.cs">
+      <DependentUpon>FrmAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovie.Designer.cs">
+      <DependentUpon>FrmMovie.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202410201500282_mig1.cs" />
     <Compile Include="Migrations\202410201500282_mig1.Designer.cs">
@@ -73,8 +85,14 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCategory.resx">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnasayfa.resx">
+      <DependentUpon>FrmAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovie.resx">
+      <DependentUpon>FrmMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202410201500282_mig1.resx">
       <DependentUpon>202410201500282_mig1.cs</DependentUpon>

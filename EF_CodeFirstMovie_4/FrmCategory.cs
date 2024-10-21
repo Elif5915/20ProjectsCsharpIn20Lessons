@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace EF_CodeFirstMovie_4
 {
-    public partial class Form1 : Form
+    public partial class FrmCategory : Form
     {
-        public Form1()
+        public FrmCategory()
         {
             InitializeComponent();
         }
@@ -51,6 +51,26 @@ namespace EF_CodeFirstMovie_4
             MessageBox.Show("İşlem Başarılı");
 
             txtboxId.Text = "";
+            txtboxName.Text = "";
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtboxId.Text);
+            var values = context.Categories.Find(id);
+            context.Categories.Remove(values);
+            context.SaveChanges();
+            MessageBox.Show("İşlem Başarılı");
+
+            txtboxId.Text = "";
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var values = context.Categories.Where(x => x.CategoryName == txtboxName.Text).ToList();
+            dataGridView1.DataSource = values;
+
             txtboxName.Text = "";
         }
     }
