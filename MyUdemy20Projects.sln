@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33801.447
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetCustomer_1", "AdoNetCustomer_1\AdoNetCustomer_1.csproj", "{DAD513CA-2D05-4E41-93AE-54D7C7ECC423}"
 EndProject
@@ -12,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_CodeFirstMovie_4", "EF_CodeFirstMovie_4\EF_CodeFirstMovie_4.csproj", "{7BB659A1-7D5A-499D-A3AD-DCA5A6D18C80}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperNorthwind_5", "DapperNorthwind_5\DapperNorthwind_5.csproj", "{12E59FAA-5EF6-4A26-B48F-9CD1094AF74D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiWeatherConsume_7", "ApiWeatherConsume_7\ApiWeatherConsume_7.csproj", "{418D4DCC-B3B9-4C8A-AD69-AB6C3C472B17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiWeatherApp_6", "ApiWeatherApp_6\ApiWeatherApp_6.csproj", "{2E3A8680-D48F-4400-B606-9C862F19597E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{12E59FAA-5EF6-4A26-B48F-9CD1094AF74D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12E59FAA-5EF6-4A26-B48F-9CD1094AF74D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12E59FAA-5EF6-4A26-B48F-9CD1094AF74D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{418D4DCC-B3B9-4C8A-AD69-AB6C3C472B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418D4DCC-B3B9-4C8A-AD69-AB6C3C472B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418D4DCC-B3B9-4C8A-AD69-AB6C3C472B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418D4DCC-B3B9-4C8A-AD69-AB6C3C472B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3A8680-D48F-4400-B606-9C862F19597E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3A8680-D48F-4400-B606-9C862F19597E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3A8680-D48F-4400-B606-9C862F19597E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3A8680-D48F-4400-B606-9C862F19597E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
