@@ -155,4 +155,35 @@ if (number == "5")
     }
 
 }
+
+if (number == "6")
+{
+    string url = "https://localhost:7010/api/Weathers/GetByIdWeatherCity?id=";
+    Console.Write("Bilgilerini getirmek istediğiniz şehirin Id değeri: ");
+    int id = int.Parse(Console.ReadLine());
+    Console.WriteLine();
+
+    using (HttpClient client = new HttpClient())
+    {
+        HttpResponseMessage response = await client.GetAsync(url + id);
+        response.EnsureSuccessStatusCode();
+        string responseBody = await response.Content.ReadAsStringAsync();
+        JObject weatherCityObject = JObject.Parse(responseBody);
+
+        string cityName = weatherCityObject["cityName"].ToString();
+        string country = weatherCityObject["country"].ToString();
+        string detail = weatherCityObject["detail"].ToString();
+        decimal temp = decimal.Parse(weatherCityObject["temp"].ToString());
+
+        Console.WriteLine("Girmiş olduğunuz Id değerine ait bilgiler");
+        Console.WriteLine();
+        Console.Write(cityName + "-" + country + "-" + detail + "-" + temp);
+
+
+    }
+
+
+}
+
+
 Console.Read();
