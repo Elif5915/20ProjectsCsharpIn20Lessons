@@ -47,6 +47,7 @@
             this.btnCompleted = new System.Windows.Forms.Button();
             this.btnContinue = new System.Windows.Forms.Button();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
+            this.btnCategoryList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -217,12 +218,23 @@
             this.cmbCategory.Size = new System.Drawing.Size(236, 27);
             this.cmbCategory.TabIndex = 20;
             // 
+            // btnCategoryList
+            // 
+            this.btnCategoryList.Location = new System.Drawing.Point(375, 258);
+            this.btnCategoryList.Name = "btnCategoryList";
+            this.btnCategoryList.Size = new System.Drawing.Size(137, 31);
+            this.btnCategoryList.TabIndex = 21;
+            this.btnCategoryList.Text = "Kategori Listesi";
+            this.btnCategoryList.UseVisualStyleBackColor = true;
+            this.btnCategoryList.Click += new System.EventHandler(this.btnCategoryList_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
             this.ClientSize = new System.Drawing.Size(569, 366);
+            this.Controls.Add(this.btnCategoryList);
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.btnCompleted);
@@ -274,6 +286,7 @@
         private System.Windows.Forms.Button btnCompleted;
         private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.ComboBox cmbCategory;
+        private System.Windows.Forms.Button btnCategoryList;
     }
 }
 

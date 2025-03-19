@@ -21,5 +21,11 @@ namespace PostgreSqlToDoListApp_10
         {
 
         }
+
+        private void btnCategoryList_Click(object sender, EventArgs e)
+        {
+            FrmCategory category = new FrmCategory();
+            category.Show();
+        }
     }
 }

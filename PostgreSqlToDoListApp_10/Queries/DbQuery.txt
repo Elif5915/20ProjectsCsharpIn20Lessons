@@ -14,3 +14,10 @@
 -- CategoryId int,
 --   Foreign key (CategoryId) references Categories(CategoryId) on delete cascade   
 -- )
+
+
+--insert into Categories(CategoryName) values ('İş')
+--insert into Categories(CategoryName) values ('Eğitim')
+--insert into Categories(CategoryName) values ('Spor')
+--insert into Categories(CategoryName) values ('Toplantı')
+--insert into Categories(CategoryName) values ('Aktivite')
