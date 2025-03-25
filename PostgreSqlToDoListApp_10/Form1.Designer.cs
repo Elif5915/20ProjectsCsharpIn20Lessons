@@ -177,6 +177,7 @@
             this.btnDelete.TabIndex = 15;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -186,34 +187,37 @@
             this.btnUpdate.TabIndex = 16;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnListAll
             // 
-            this.btnListAll.Location = new System.Drawing.Point(357, 161);
+            this.btnListAll.Location = new System.Drawing.Point(357, 150);
             this.btnListAll.Name = "btnListAll";
-            this.btnListAll.Size = new System.Drawing.Size(137, 25);
+            this.btnListAll.Size = new System.Drawing.Size(137, 50);
             this.btnListAll.TabIndex = 17;
-            this.btnListAll.Text = "Tüm Liste";
+            this.btnListAll.Text = "Tüm Liste(kategori)";
             this.btnListAll.UseVisualStyleBackColor = true;
             this.btnListAll.Click += new System.EventHandler(this.btnListAll_Click);
             // 
             // btnCompleted
             // 
-            this.btnCompleted.Location = new System.Drawing.Point(357, 192);
+            this.btnCompleted.Location = new System.Drawing.Point(357, 206);
             this.btnCompleted.Name = "btnCompleted";
             this.btnCompleted.Size = new System.Drawing.Size(137, 25);
             this.btnCompleted.TabIndex = 18;
             this.btnCompleted.Text = "Tamamlananlar";
             this.btnCompleted.UseVisualStyleBackColor = true;
+            this.btnCompleted.Click += new System.EventHandler(this.btnCompleted_Click);
             // 
             // btnContinue
             // 
-            this.btnContinue.Location = new System.Drawing.Point(357, 223);
+            this.btnContinue.Location = new System.Drawing.Point(357, 237);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(137, 25);
             this.btnContinue.TabIndex = 19;
             this.btnContinue.Text = "Devam Edenler";
             this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // cmbCategory
             // 
