@@ -48,6 +48,8 @@
             this.btnContinue = new System.Windows.Forms.Button();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.btnCategoryList = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -68,12 +70,13 @@
             // 
             // btnList
             // 
-            this.btnList.Location = new System.Drawing.Point(375, 13);
+            this.btnList.Location = new System.Drawing.Point(357, 23);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(137, 25);
             this.btnList.TabIndex = 2;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // label2
             // 
@@ -158,16 +161,17 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(375, 47);
+            this.btnCreate.Location = new System.Drawing.Point(357, 57);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(137, 25);
             this.btnCreate.TabIndex = 14;
             this.btnCreate.Text = "Oluştur";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(375, 78);
+            this.btnDelete.Location = new System.Drawing.Point(357, 88);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(137, 25);
             this.btnDelete.TabIndex = 15;
@@ -176,7 +180,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(375, 109);
+            this.btnUpdate.Location = new System.Drawing.Point(357, 119);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(137, 25);
             this.btnUpdate.TabIndex = 16;
@@ -185,16 +189,17 @@
             // 
             // btnListAll
             // 
-            this.btnListAll.Location = new System.Drawing.Point(375, 151);
+            this.btnListAll.Location = new System.Drawing.Point(357, 161);
             this.btnListAll.Name = "btnListAll";
             this.btnListAll.Size = new System.Drawing.Size(137, 25);
             this.btnListAll.TabIndex = 17;
             this.btnListAll.Text = "Tüm Liste";
             this.btnListAll.UseVisualStyleBackColor = true;
+            this.btnListAll.Click += new System.EventHandler(this.btnListAll_Click);
             // 
             // btnCompleted
             // 
-            this.btnCompleted.Location = new System.Drawing.Point(375, 182);
+            this.btnCompleted.Location = new System.Drawing.Point(357, 192);
             this.btnCompleted.Name = "btnCompleted";
             this.btnCompleted.Size = new System.Drawing.Size(137, 25);
             this.btnCompleted.TabIndex = 18;
@@ -203,7 +208,7 @@
             // 
             // btnContinue
             // 
-            this.btnContinue.Location = new System.Drawing.Point(375, 213);
+            this.btnContinue.Location = new System.Drawing.Point(357, 223);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(137, 25);
             this.btnContinue.TabIndex = 19;
@@ -220,7 +225,7 @@
             // 
             // btnCategoryList
             // 
-            this.btnCategoryList.Location = new System.Drawing.Point(375, 258);
+            this.btnCategoryList.Location = new System.Drawing.Point(357, 268);
             this.btnCategoryList.Name = "btnCategoryList";
             this.btnCategoryList.Size = new System.Drawing.Size(137, 31);
             this.btnCategoryList.TabIndex = 21;
@@ -228,12 +233,21 @@
             this.btnCategoryList.UseVisualStyleBackColor = true;
             this.btnCategoryList.Click += new System.EventHandler(this.btnCategoryList_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(518, 14);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(528, 336);
+            this.dataGridView1.TabIndex = 22;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ClientSize = new System.Drawing.Size(569, 366);
+            this.ClientSize = new System.Drawing.Size(1058, 366);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnCategoryList);
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.btnContinue);
@@ -255,11 +269,13 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "To Do List";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,6 +303,7 @@
         private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.ComboBox cmbCategory;
         private System.Windows.Forms.Button btnCategoryList;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
