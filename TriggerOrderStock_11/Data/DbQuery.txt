@@ -1,0 +1,32 @@
+﻿--Create Trigger IncreaseProcessCount
+--on Orders
+--after insert
+--as 
+--Update Processes set Process+=1
+
+--Create Trigger DecreaseProcessCount
+--on Orders
+--after delete
+--as 
+--Update Processes set Process-=1
+
+-- select *from Processes
+
+--Parametreli Trigger Kullanımı 
+
+--Create Trigger DecreaseProductStockCount
+--on Orders
+--after insert 
+--as
+--Declare @productQuantity int 
+--Declare @productId int
+--Select @productQuantity = Quantity, @productId = productId from inserted
+--Update Products set ProductStock-=@productQuantity where ProductId= @productId
+
+--Create Trigger AddTotalPricetoCashRegisterBalance --Kasa Bakiyesine Toplam Fiyatı Ekle
+--On Orders
+--after insert 
+--as
+--Declare @totalPrice decimal (18,2)
+--Select @totalPrice= TotalPrice from inserted
+--update CashRegister set Balance+=@totalPrice
