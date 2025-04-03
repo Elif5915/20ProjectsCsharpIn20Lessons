@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace JwtToken_12
 {
-    public partial class Form1 : Form
+    public partial class FrmTokenGenerator : Form
     {
-        public Form1()
+        public FrmTokenGenerator()
         {
             InitializeComponent();
         }
