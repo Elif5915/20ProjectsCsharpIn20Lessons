@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,17 @@ namespace JwtToken_12
         public FrmEmployee()
         {
             InitializeComponent();
+        }
+        SqlConnection connect = new SqlConnection("Server= DESKTOP-NM06KEK\\SQLKODLAR; initial catalog = Test;integrated security = true");
+        private void FrmEmployee_Load(object sender, EventArgs e)
+        {
+            connect.Open();
+            SqlCommand command = new SqlCommand("Select *from Employee",connect);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable dataTable = new DataTable();
+            adapter.Fill(dataTable);
+            dataGridView1.DataSource = dataTable;
+            connect.Close();
         }
     }
 }
