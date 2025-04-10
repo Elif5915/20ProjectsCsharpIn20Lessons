@@ -146,6 +146,8 @@
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTokenCreate);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmTokenGenerator";
             this.Text = "FrmTokenGenerator";
             this.ResumeLayout(false);

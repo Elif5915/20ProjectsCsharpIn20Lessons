@@ -16,8 +16,8 @@ namespace JwtToken_12
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmTokenGenerator());
-            //Application.Run(new FrmLogin());
+            //Application.Run(new FrmTokenGenerator());
+            Application.Run(new FrmLogin());
         }
     }
 }
