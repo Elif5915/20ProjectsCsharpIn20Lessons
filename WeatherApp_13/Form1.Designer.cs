@@ -39,8 +39,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblWindSpeed = new System.Windows.Forms.Label();
+            this.lblDamp = new System.Windows.Forms.Label();
             this.lblFahrenheit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -146,25 +146,25 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Fahrenheit";
             // 
-            // label10
+            // lblWindSpeed
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(156, 303);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(25, 19);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "00";
+            this.lblWindSpeed.AutoSize = true;
+            this.lblWindSpeed.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblWindSpeed.Location = new System.Drawing.Point(156, 303);
+            this.lblWindSpeed.Name = "lblWindSpeed";
+            this.lblWindSpeed.Size = new System.Drawing.Size(25, 19);
+            this.lblWindSpeed.TabIndex = 10;
+            this.lblWindSpeed.Text = "00";
             // 
-            // label11
+            // lblDamp
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(156, 336);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(25, 19);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "00";
+            this.lblDamp.AutoSize = true;
+            this.lblDamp.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDamp.Location = new System.Drawing.Point(156, 336);
+            this.lblDamp.Name = "lblDamp";
+            this.lblDamp.Size = new System.Drawing.Size(25, 19);
+            this.lblDamp.TabIndex = 11;
+            this.lblDamp.Text = "00";
             // 
             // lblFahrenheit
             // 
@@ -183,8 +183,8 @@
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(455, 443);
             this.Controls.Add(this.lblFahrenheit);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lblDamp);
+            this.Controls.Add(this.lblWindSpeed);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -218,8 +218,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblWindSpeed;
+        private System.Windows.Forms.Label lblDamp;
         private System.Windows.Forms.Label lblFahrenheit;
     }
 }

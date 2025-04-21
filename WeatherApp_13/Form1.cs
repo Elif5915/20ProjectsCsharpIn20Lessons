@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,8 +37,17 @@ namespace WeatherApp_13
             {
                 response.EnsureSuccessStatusCode();
                 var body = await response.Content.ReadAsStringAsync();
+                var json = JObject.Parse(body);
+                var fahrenheit = json["main"]["feels_like"].ToString();
+                var windSpeed = json["wind"]["speed"].ToString();
+                var damp = json["main"]["humidity"].ToString();
+                lblFahrenheit.Text = fahrenheit;
+                lblWindSpeed.Text = windSpeed;
+                lblDamp.Text = damp;
+                //var celsius = fahrenheit - 32;
                 
             }
         }
     }
 }
+;
