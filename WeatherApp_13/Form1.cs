@@ -26,7 +26,7 @@ namespace WeatherApp_13
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
-                RequestUri = new Uri("https://open-weather13.p.rapidapi.com/city/landon/EN"),
+                RequestUri = new Uri("https://open-weather13.p.rapidapi.com/city/istanbul/EN"),
                 Headers =
     {
         { "x-rapidapi-key", "8be6f92745mshaf73e9b2522c8f1p11a194jsn36e6ac18ef3b" },
@@ -44,7 +44,9 @@ namespace WeatherApp_13
                 lblFahrenheit.Text = fahrenheit;
                 lblWindSpeed.Text = windSpeed;
                 lblDamp.Text = damp;
-                //var celsius = fahrenheit - 32;
+                double celsius = (double.Parse(fahrenheit) - 32);
+                double celsiusValue = celsius / 1.8;
+                lblCelsius.Text = celsiusValue.ToString();
                 
             }
         }
