@@ -1,0 +1,36 @@
+﻿--create table Teams(
+--TeamId int primary key identity(1,1),
+--TeamName Nvarchar(100),
+--TeamCountry Nvarchar(100)
+--)
+
+--create table TeamDetail(
+--TeamDetailId int identity(1,1) primary key,
+--TeamId int unique,
+--TeamColor Nvarchar(50),
+--TeamValue decimal(18,2),
+--Foreign Key(TeamId) references Teams(TeamId)
+--)
+
+--Database diyagram da iki anahtar birebir ilişki anlamına gelir.
+
+--create table Players(
+--PlayerId int identity(1,1) primary key,
+--PlayerName Nvarchar(50),
+--TeamId int,
+--Foreign key (TeamId) references Teams(TeamId)
+--)
+
+--create table Sponsors(
+--SponsorId int identity(1,1) primary key,
+--SponsorName Nvarchar(50)
+--)
+
+--create table TeamsSponsors(
+--TeamId int,
+--SponsorId int,
+--primary key(TeamId,SponsorId),
+--foreign key (TeamId) references Teams(TeamId),
+--foreign key (SponsorId) references Sponsors(SponsorId)
+
+--)
