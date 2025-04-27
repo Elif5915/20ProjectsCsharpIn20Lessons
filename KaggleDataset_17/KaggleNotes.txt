@@ -1,0 +1,14 @@
+﻿Birinci veri setimizin linki
+https://www.kaggle.com/datasets/shivamb/netflix-shows
+
+select count(*)from [netflix_titles.csv]; -- 8807 veri var bu tablo içinde.
+
+ikinci veri setimizin linki 
+https://www.kaggle.com/datasets/nextmillionaire/pizza-sales-dataset
+
+select count(*) from pizza_sales; -- 48620 veri var bu tablo içinde.
+
+Üçüncü veri setimizin linki
+https://www.kaggle.com/datasets/fatihilhan/global-superstore-dataset
+
+select count(*) from superstore; -- 51290 veri var bu tablo içinde.
