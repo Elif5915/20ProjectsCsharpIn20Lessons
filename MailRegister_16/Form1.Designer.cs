@@ -69,6 +69,7 @@
             this.btnRegister.TabIndex = 2;
             this.btnRegister.Text = "Kayıt Ol";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // txtSurname
             // 
