@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardSuperStoreDataset_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableStatusMomentary_19", "TableStatusMomentary_19\TableStatusMomentary_19.csproj", "{DD46314F-3E34-47A3-8579-FFBFF425E768}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalDersi_20", "FinalDersi_20\FinalDersi_20.csproj", "{D8D2AB66-A49C-47BE-A7DD-A752549D146B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{DD46314F-3E34-47A3-8579-FFBFF425E768}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD46314F-3E34-47A3-8579-FFBFF425E768}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD46314F-3E34-47A3-8579-FFBFF425E768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8D2AB66-A49C-47BE-A7DD-A752549D146B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D2AB66-A49C-47BE-A7DD-A752549D146B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D2AB66-A49C-47BE-A7DD-A752549D146B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D2AB66-A49C-47BE-A7DD-A752549D146B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
