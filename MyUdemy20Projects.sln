@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaggleDataset_17", "KaggleD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardSuperStoreDataset_18", "DashboardSuperStoreDataset_18\DashboardSuperStoreDataset_18.csproj", "{05A454DE-AE95-4A39-8CAB-E20717CA869C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableStatusMomentary_19", "TableStatusMomentary_19\TableStatusMomentary_19.csproj", "{DD46314F-3E34-47A3-8579-FFBFF425E768}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{05A454DE-AE95-4A39-8CAB-E20717CA869C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05A454DE-AE95-4A39-8CAB-E20717CA869C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05A454DE-AE95-4A39-8CAB-E20717CA869C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD46314F-3E34-47A3-8579-FFBFF425E768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD46314F-3E34-47A3-8579-FFBFF425E768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD46314F-3E34-47A3-8579-FFBFF425E768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD46314F-3E34-47A3-8579-FFBFF425E768}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
