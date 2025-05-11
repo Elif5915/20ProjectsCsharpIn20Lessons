@@ -70,6 +70,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 196);
             this.dataGridView1.Name = "dataGridView1";
@@ -85,6 +86,7 @@
             this.btnList.TabIndex = 4;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // txtCustomer
             // 
@@ -178,6 +180,7 @@
             this.btnUpdate.TabIndex = 14;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -188,6 +191,7 @@
             this.btnDelete.TabIndex = 15;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnBring
             // 
@@ -198,6 +202,7 @@
             this.btnBring.TabIndex = 16;
             this.btnBring.Text = "Getir";
             this.btnBring.UseVisualStyleBackColor = true;
+            this.btnBring.Click += new System.EventHandler(this.btnBring_Click);
             // 
             // pictureBox1
             // 
