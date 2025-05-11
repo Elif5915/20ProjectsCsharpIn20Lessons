@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MongoOrder_9
@@ -18,6 +11,13 @@ namespace MongoOrder_9
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        //mongo db de tablolar birer collection(koleksiyon) şeklinde adlandırılır.
+        //kayıtlar yani satırlar birer doküman(document)
+        //sütunlar ise birer field olarak adlandırılır.
+        private void btnAdd_Click(object sender, EventArgs e)
         {
 
         }
